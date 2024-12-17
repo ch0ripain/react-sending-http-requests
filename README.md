@@ -123,26 +123,26 @@ Explanation of Key Concepts 🧰
 
 Common HTTP Methods 🌐
  
-<code>GET<code>  ➡️ Retrieve data from the server <br/>
-<code>POST<code> ➡️ Send new data to the server <br/>
-<code>PUT<code>  ➡️ Update existing data on the server <br/>
-<code>DELETE<code> ➡️ Remove data from the server <br/>
-<code>PATCH<code>  ➡️ Partially update data
+<code>GET</code>  ➡️ Retrieve data from the server <br/>
+<code>POST</code> ➡️ Send new data to the server <br/>
+<code>PUT</code>  ➡️ Update existing data on the server <br/>
+<code>DELETE</code> ➡️ Remove data from the server <br/>
+<code>PATCH</code>  ➡️ Partially update data
 
-<code>body: JSON.stringify({ places })<code>
+<code>body: JSON.stringify({ places })</code>
 
-- <code>JSON.stringify()<code> converts a JavaScript object into a JSON-formatted string because HTTP requests require plain text (not raw JS objects).
-- You must pass an <code>object<code> with key-value pairs (e.g., { places: [...] }) so the server can properly identify and handle the data.
+- <code>JSON.stringify()</code> converts a JavaScript object into a JSON-formatted string because HTTP requests require plain text (not raw JS objects).
+- You must pass an <code>object</code> with key-value pairs (e.g., { places: [...] }) so the server can properly identify and handle the data.
 
-<code>headers: { "Content-Type": "application/json" }<code>
+<code>headers: { "Content-Type": "application/json" }</code>
 
-- The <code>headers<code> property defines additional information sent with the request.
-- <code>Content-Type: application/json<code> tells the server that the body contains JSON-formatted data, ensuring it is parsed correctly.
+- The <code>headers</code> property defines additional information sent with the request.
+- <code>Content-Type: application/json</code> tells the server that the body contains JSON-formatted data, ensuring it is parsed correctly.
 
-<code>response.json()<code>
+<code>response.json()</code>
 
-- The <code>.json()<code> method reads the server's response body and converts it into a JavaScript object.
-- This is necessary because fetch returns a <code>stream<code> by default, and you need to "decode" it into usable data.
+- The <code>.json()</code> method reads the server's response body and converts it into a JavaScript object.
+- This is necessary because fetch returns a <code>stream</code> by default, and you need to "decode" it into usable data.
 
 
 
