@@ -123,11 +123,11 @@ Explanation of Key Concepts 🧰
 > [!NOTE]
 > Common HTTP Methods
 > 
-> GET ➡️ Retrieve data from the server <br/>
+> GET  ➡️ Retrieve data from the server <br/>
 > POST ➡️ Send new data to the server <br/>
-> PUT ➡️ Update existing data on the server <br/>
+> PUT  ➡️ Update existing data on the server <br/>
 > DELETE ➡️ Remove data from the server <br/>
-> PATCH ➡️ Partially update data
+> PATCH  ➡️ Partially update data
 
 
 
