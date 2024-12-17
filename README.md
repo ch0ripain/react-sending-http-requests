@@ -123,7 +123,7 @@ Explanation of Key Concepts 🧰
 > [!NOTE]
 > Common HTTP Methods
 > 
-> GET ➡️ Retrieve data from the server
+> GET ➡️ Retrieve data from the server <br/>
 > POST ➡️ Send new data to the server
 > PUT ➡️ Update existing data on the server
 > DELETE ➡️ Remove data from the server
