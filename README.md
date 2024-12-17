@@ -129,6 +129,8 @@ Common HTTP Methods 🌐
 <code>DELETE</code> ➡️ Remove data from the server <br/>
 <code>PATCH</code>  ➡️ Partially update data
 
+---
+
 <code>body: JSON.stringify({ places })</code>
 
 - <code>JSON.stringify()</code> converts a JavaScript object into a JSON-formatted string because HTTP requests require plain text (not raw JS objects).
