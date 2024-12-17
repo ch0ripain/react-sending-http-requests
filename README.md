@@ -98,7 +98,7 @@ async function fetchPlaces() {
 ## Making HTTP Requests with Methods, Body, and Headers 🚀
 By default, fetch uses the <code>GET method</code>. If you want to use a different <code>HTTP method</code>, you need to provide an options object with specific properties such as <code>method</code>, <code>body</code>, and <code>headers</code>.
 
-This function sends an HTTP PUT request to update user places on the server.
+This function sends an <code>HTTP PUT</code> request to update user places on the server.
 ```javascript
 export async function updateUserPlaces(places) {
   const response = await fetch("http://localhost:3000/user-places", {
@@ -121,6 +121,8 @@ export async function updateUserPlaces(places) {
 
 ### Explanation of Key Concepts 🧰
 
+---
+
 Common HTTP Methods 🌐
  
 <code>GET</code>  ➡️ Retrieve data from the server <br/>
@@ -136,10 +138,14 @@ Common HTTP Methods 🌐
 - <code>JSON.stringify()</code> converts a JavaScript object into a JSON-formatted string because HTTP requests require plain text (not raw JS objects).
 - You must pass an <code>object</code> with key-value pairs (e.g., { places: [...] }) so the server can properly identify and handle the data.
 
+---
+
 <code>headers: { "Content-Type": "application/json" }</code>
 
 - The <code>headers</code> property defines additional information sent with the request.
 - <code>Content-Type: application/json</code> tells the server that the body contains JSON-formatted data, ensuring it is parsed correctly.
+
+---
 
 <code>response.json()</code>
 
