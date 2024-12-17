@@ -144,7 +144,7 @@ Common HTTP Methods 🌐
 - The <code>.json()</code> method reads the server's response body and converts it into a JavaScript object.
 - This is necessary because fetch returns a <code>stream</code> by default, and you need to "decode" it into usable data.
 
-
+---
 
 
 <p align="center">🐸 This project is a practice exercise I learned from the <a href='https://www.udemy.com/course/react-the-complete-guide-incl-redux/?couponCode=ST7MT110524'>Academind's React Course</a> 🐸</p>
