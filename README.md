@@ -1,4 +1,5 @@
 <h1 align="center">🧙‍♂️ Sending HTTP Requests 🧙‍♂️</h1>
+
 ## Initial Fetch Approach
 ```javascript
 useEffect(() => {
