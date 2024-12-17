@@ -66,7 +66,7 @@ useEffect(() => {
 
 ```
 - Added error handling using a <code>try/catch</code> block.
-- Included an error state to manage and display errors gracefully.
+- Included an error state to manage and display errors.
 
 ## 4. Final Optimization: Outsourcing HTTP Logic 🧰
 Moved the HTTP request logic to a standalone utility function <code>http.js</code> for cleaner and more reusable code.
