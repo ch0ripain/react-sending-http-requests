@@ -93,8 +93,36 @@ async function fetchPlaces() {
   }
   setIsFetchingData(false);
 }
-
 ```
+
+## Making HTTP Requests with Methods, Body, and Headers 🚀
+By default, fetch uses the GET method when interacting with REST APIs. If you want to use a different HTTP method (like POST or PUT), you need to provide an options object (often called init) with specific properties such as method, body, and headers.
+
+This function sends an HTTP PUT request to update user places on the server.
+```javascript
+export async function updateUserPlaces(places) {
+  const response = await fetch("http://localhost:3000/user-places", {
+    method: "PUT", // Specify the HTTP method
+    body: JSON.stringify({ places }), // Convert JS object to JSON format
+    headers: {
+      "Content-Type": "application/json", // Inform the server about the data type
+    },
+  });
+
+  const responseData = await response.json(); // Parse the response body as JSON
+
+  if (!response.ok) {
+    throw new Error("Updating user places went wrong :("); // Handle errors
+  }
+
+  return responseData.message; // Return a success message
+}
+```
+
+Explanation of Key Concepts 🧰
+> [!INFO]
+> Common HTTP Methods: GET Retrieve data from the server. POST: Send new data to the server. PUT: Update existing data on the server. DELETE: Remove data from the server. PATCH: Partially update data.
+
 
 
 <p align="center">🐸 This project is a practice exercise I learned from the <a href='https://www.udemy.com/course/react-the-complete-guide-incl-redux/?couponCode=ST7MT110524'>Academind's React Course</a> 🐸</p>
