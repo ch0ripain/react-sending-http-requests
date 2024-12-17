@@ -124,10 +124,10 @@ Explanation of Key Concepts 🧰
 > Common HTTP Methods
 > 
 > GET ➡️ Retrieve data from the server <br/>
-> POST ➡️ Send new data to the server
-> PUT ➡️ Update existing data on the server
-> DELETE ➡️ Remove data from the server
-> PATCH ➡️ Partially update data.
+> POST ➡️ Send new data to the server <br/>
+> PUT ➡️ Update existing data on the server <br/>
+> DELETE ➡️ Remove data from the server <br/>
+> PATCH ➡️ Partially update data
 
 
 
