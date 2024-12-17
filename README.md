@@ -96,7 +96,7 @@ async function fetchPlaces() {
 ```
 
 ## Making HTTP Requests with Methods, Body, and Headers 🚀
-By default, fetch uses the GET method when interacting with REST APIs. If you want to use a different HTTP method (like POST or PUT), you need to provide an options object (often called init) with specific properties such as method, body, and headers.
+By default, fetch uses the <code>GET method</code>. If you want to use a different <code>HTTP method</code>, you need to provide an options object with specific properties such as <code>method</code>, <code>body</code>, and <code>headers</code>.
 
 This function sends an HTTP PUT request to update user places on the server.
 ```javascript
@@ -120,14 +120,30 @@ export async function updateUserPlaces(places) {
 ```
 
 Explanation of Key Concepts 🧰
-> [!NOTE]
-> Common HTTP Methods
-> 
-> GET  ➡️ Retrieve data from the server <br/>
-> POST ➡️ Send new data to the server <br/>
-> PUT  ➡️ Update existing data on the server <br/>
-> DELETE ➡️ Remove data from the server <br/>
-> PATCH  ➡️ Partially update data
+
+Common HTTP Methods 🌐
+ 
+<code>GET<code>  ➡️ Retrieve data from the server <br/>
+<code>POST<code> ➡️ Send new data to the server <br/>
+<code>PUT<code>  ➡️ Update existing data on the server <br/>
+<code>DELETE<code> ➡️ Remove data from the server <br/>
+<code>PATCH<code>  ➡️ Partially update data
+
+<code>body: JSON.stringify({ places })<code>
+
+- <code>JSON.stringify()<code> converts a JavaScript object into a JSON-formatted string because HTTP requests require plain text (not raw JS objects).
+- You must pass an <code>object<code> with key-value pairs (e.g., { places: [...] }) so the server can properly identify and handle the data.
+
+<code>headers: { "Content-Type": "application/json" }<code>
+
+- The <code>headers<code> property defines additional information sent with the request.
+- <code>Content-Type: application/json<code> tells the server that the body contains JSON-formatted data, ensuring it is parsed correctly.
+
+<code>response.json()<code>
+
+- The <code>.json()<code> method reads the server's response body and converts it into a JavaScript object.
+- This is necessary because fetch returns a <code>stream<code> by default, and you need to "decode" it into usable data.
+
 
 
 
