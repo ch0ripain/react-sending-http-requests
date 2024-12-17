@@ -121,7 +121,8 @@ export async function updateUserPlaces(places) {
 
 Explanation of Key Concepts 🧰
 > [!NOTE]
-> Common HTTP Methods: GET ➡️ Retrieve data from the server. POST ➡️ Send new data to the server. PUT ➡️ Update existing data on the server. DELETE ➡️ Remove data from the server. PATCH ➡️ Partially update data.
+> Common HTTP Methods \n
+> GET ➡️ Retrieve data from the server. POST ➡️ Send new data to the server. PUT ➡️ Update existing data on the server. DELETE ➡️ Remove data from the server. PATCH ➡️ Partially update data.
 
 
 
