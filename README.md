@@ -119,7 +119,7 @@ export async function updateUserPlaces(places) {
 }
 ```
 
-Explanation of Key Concepts 🧰
+### Explanation of Key Concepts 🧰
 
 Common HTTP Methods 🌐
  
